@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Récupération du code source') {
             steps {
-                git branch: 'Ala', url: 'https://github.com/AymenMzoughi/DevOpsProject.git'
+                git branch: 'main', url: 'https://github.com/gaston0/devops.git'
             }
         }
 
@@ -55,7 +55,7 @@ pipeline {
                stage('Docker login')
                {
                    steps {
-                       sh 'echo $dockerhub_PSW | docker login -u username -p password'
+                       sh 'echo $dockerhub_PSW | docker login -u ghassenTEK-p culer1889
                    }
 
                }
