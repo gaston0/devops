@@ -55,7 +55,7 @@ pipeline {
                stage('Docker login')
                {
                    steps {
-                       sh 'echo $dockerhub_PSW | docker login -u ghassenTEK-p culer1889
+                       sh 'echo $dockerhub_PSW | docker login -u ghassenTEK -p culer1889'
                    }
 
                }
